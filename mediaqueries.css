@@ -61,11 +61,10 @@
 
 @media screen and (max-width: 600px) {
 	body {
-		font-family: "Poppins", sans-serif;
-		background-image: url(assets/sky-full-of-stars.jpeg);
+		background-image: url(assets/sky-full-of-stars-mobile.png);
 		background-attachment: fixed;
 		background-size: cover;
-		background-position: center center;
+		background-position: center;
 		background-repeat: no-repeat;
 	}
 	.scroll-down-link {
