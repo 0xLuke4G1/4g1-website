@@ -60,12 +60,28 @@
 }
 
 @media screen and (max-width: 600px) {
-	body {
+	/* body {
 		background-image: url(assets/sky-full-of-stars-mobile.png);
 		background-attachment: fixed;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
+	} */
+
+	body:before {
+		content: "";
+		display: block;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -10;
+		background: url(assets/sky-full-of-stars-mobile.png) no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
 	.scroll-down-link {
 		position: absolute;
