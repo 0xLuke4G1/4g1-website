@@ -114,7 +114,7 @@ a:hover {
 
 .menu-links {
 	position: absolute;
-
+	z-index: 2;
 	top: 100%;
 	right: 0;
 	background-color: white;
@@ -619,6 +619,7 @@ HTML CSSResult Skip Results Iframe EDIT ON html body {
 	color: white;
 	text-shadow: 2px 0px 10px #f65d00;
 	font-size: 4rem;
+	z-index: 1;
 }
 @-webkit-keyframes fade_move_down {
 	0% {
