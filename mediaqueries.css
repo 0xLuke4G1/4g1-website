@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
 	#profile {
 		height: 60vh;
 		margin-bottom: 6rem;
@@ -17,7 +17,7 @@
 	section {
 		margin: 0 5rem;
 	}
-}
+} */
 
 @media screen and (max-width: 1200px) {
 	#desktop-nav {
@@ -54,8 +54,67 @@
 		margin-top: 0;
 	}
 	.answer {
-		margin-top: 5rem;
+		margin-top: 3rem;
 		font-size: larger;
+	}
+
+	.answer h1 {
+		padding: 1.5rem;
+		/* width: 80%; */
+		font-size: 2.3rem;
+	}
+	#answers-div {
+		margin-top: 2rem;
+		gap: 0;
+		text-align: center;
+		justify-content: space-evenly;
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+	}
+	#profile {
+		margin-top: 2rem;
+	}
+
+	section h1 {
+		font-size: 2rem;
+		text-align: center;
+	}
+	.experience-sub-title {
+		font-size: 2.3rem;
+	}
+	.scroll-down-link {
+		position: absolute;
+		z-index: 100;
+		cursor: pointer;
+		height: 60px;
+		width: 80px;
+		margin: 0px 0 0 -25px;
+		line-height: 60px;
+		left: 50%;
+		bottom: 2.5rem;
+		color: #fff;
+		text-align: center;
+		font-size: 70px;
+		text-decoration: none;
+	}
+	.contact-info-upper-container {
+		/* width: 50%; */
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.answer h1 {
+		padding: 1.5rem;
+		font-size: 1.5rem;
+	}
+	.contact-info-container {
+		width: 100%;
+	}
+	.contact-info-upper-container {
+		width: 60%;
+		flex-wrap: wrap;
 	}
 }
 
