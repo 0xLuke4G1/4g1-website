@@ -104,10 +104,17 @@
 	}
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1050px) {
 	.answer h1 {
 		padding: 1.5rem;
 		font-size: 1.5rem;
+	}
+	.answer {
+		margin-top: 1.5rem;
+	}
+
+	#question {
+		font-size: 3rem;
 	}
 	.contact-info-container {
 		width: 100%;
@@ -115,6 +122,10 @@
 	.contact-info-upper-container {
 		width: 60%;
 		flex-wrap: wrap;
+	}
+	.logo img {
+		margin-top: 0.5rem;
+		width: 7rem;
 	}
 }
 
