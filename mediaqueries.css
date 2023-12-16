@@ -102,6 +102,9 @@
 		/* width: 50%; */
 		flex-wrap: wrap;
 	}
+	#question {
+		font-size: 2.5rem;
+	}
 }
 
 @media screen and (max-width: 1050px) {
@@ -129,7 +132,7 @@
 	}
 
 	#question {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 	.contact-info-container {
 		width: 100%;
