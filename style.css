@@ -9,13 +9,14 @@
 
 body {
 	font-family: "Poppins", sans-serif;
+}
+#background {
 	background-image: url(assets/sky-full-of-stars.jpeg);
 	background-attachment: fixed;
-	background-size: cover; /* o puoi usare 'cover' per coprire l'intera pagina */
+	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-
 html {
 	scroll-behavior: smooth;
 }
