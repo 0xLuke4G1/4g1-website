@@ -73,10 +73,16 @@ a:hover {
 	display: flex;
 	align-items: center;
 	gap: 2rem;
+	color: white;
+}
+.logo img {
+	margin-top: 1rem;
+	width: 10rem;
 }
 
 .logo:hover {
 	cursor: default;
+	/* color: #f65d00; */
 }
 
 /* HAMBURGER MENU */
@@ -102,7 +108,7 @@ a:hover {
 .hamburger-icon span {
 	width: 100%;
 	height: 2px;
-	background-color: black;
+	background-color: white;
 	transition: all 0.3 ease-in-out;
 }
 
@@ -116,14 +122,15 @@ a:hover {
 	max-height: 0;
 	overflow: hidden;
 	transition: all 0.3 ease-in-out;
+	opacity: 0.75;
 }
 
 .menu-links a {
 	display: block;
 	padding: 10px;
 	text-align: center;
-	font-size: 1.5rem;
-	color: black;
+	font-size: 1.3rem;
+	color: #f65d00;
 	text-decoration: none;
 	transition: all 0.3 ease-in-out;
 }
@@ -134,7 +141,8 @@ a:hover {
 }
 
 .menu-links.open {
-	max-height: 300px;
+	max-height: 200px;
+	width: 250px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -167,9 +175,11 @@ section {
 	padding-top: 4vh;
 	min-height: 65vh;
 	margin: 0 16rem;
-	/* box-sizing: border-box; */
 	min-height: fit-content;
 	opacity: 85%;
+}
+section h1 {
+	font-size: 2.5rem;
 }
 
 .section-container {
@@ -181,8 +191,8 @@ section {
 #profile {
 	display: flex;
 	justify-content: center;
-	gap: 5rem;
-	height: 65vh;
+	/* gap: 1rem; */
+	height: 70vh;
 	padding-bottom: 15rem;
 	margin-bottom: 10rem;
 	flex-wrap: nowrap;
@@ -301,6 +311,8 @@ section {
 .about-containers,
 .about-details-container {
 	display: flex;
+	/*  flex-direction: column; */
+	flex-wrap: wrap;
 }
 
 .about-pic {
@@ -345,13 +357,15 @@ section {
 
 .experience {
 	position: relative;
+	margin-top: 10rem;
 }
 
 .experience-sub-title {
 	color: rgb(85, 85, 85);
 	font-weight: 600;
-	font-size: 1.75rem;
+	font-size: 2.5rem;
 	margin-bottom: 2rem;
+	margin-top: 1rem;
 }
 
 .experience-details-container {
@@ -362,12 +376,14 @@ section {
 }
 
 .article-container {
+	margin-top: 4rem;
 	display: flex;
 	text-align: initial;
 	flex-wrap: wrap;
-	flex-direction: row;
 	gap: 2.5rem;
 	justify-content: space-around;
+	flex-direction: column;
+	align-content: space-around;
 }
 
 .article-refactored {
@@ -470,7 +486,7 @@ footer p {
 .book-consultancy {
 	margin-top: 3rem;
 	text-transform: uppercase;
-	font-size: x-large;
+	font-size: 2rem;
 	display: flex;
 	justify-content: space-evenly;
 	border-radius: 2rem;
@@ -478,12 +494,9 @@ footer p {
 
 .book-consultancy :hover {
 	cursor: pointer;
-	/* text-decoration: underline; */
-	/* text-decoration-thickness: inherit; */
-	/* color: #f65d00; */
+
 	opacity: 90%;
 	text-shadow: 4px 0px 20px #f65d00;
-	/* background-color: #f65d00; */
 	background: linear-gradient(
 			rgba(255, 255, 255, 0.05),
 			rgba(255, 255, 255, 0.05)
@@ -504,25 +517,25 @@ footer p {
 
 .answer h1 {
 	color: white;
-	/* -webkit-text-stroke: #f65d00 1px; */
 	text-shadow: 0.5px 0px 5px #f65d00;
 	cursor: pointer;
 	color: white;
 	padding: 2rem;
-
-	/* font-size: 3rem; */
+	font-size: 1.5rem;
+	border: 1px solid white;
+	border-radius: 4rem;
 }
 
 .answer :hover {
 	cursor: pointer;
 	background-color: white;
 	text-shadow: 0.5px 0px 0px #f65d00;
-	border-radius: 5rem;
+	border-radius: 4rem;
 	color: #f65d00;
 	opacity: 95%;
 }
 #answers-div {
-	margin-top: 7rem;
+	margin-top: 4rem;
 	gap: 4rem;
 	text-align: center;
 	justify-content: space-evenly;
@@ -594,7 +607,18 @@ HTML CSSResult Skip Results Iframe EDIT ON html body {
 	-webkit-animation: fade_move_down 2s ease-in-out infinite;
 	-moz-animation: fade_move_down 2s ease-in-out infinite;
 	animation: fade_move_down 2s ease-in-out infinite;
-	/*animated scroll arrow animation*/
+}
+
+#bio {
+	font-size: 1.3rem;
+	text-align: justify;
+	font-weight: lighter;
+}
+
+#question {
+	color: white;
+	text-shadow: 2px 0px 10px #f65d00;
+	font-size: 4rem;
 }
 @-webkit-keyframes fade_move_down {
 	0% {

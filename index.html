@@ -12,7 +12,7 @@
     <body>
         <nav id="desktop-nav">
             <div class="logo">
-                <img src="./assets/4g1white.png" alt="4G1 profile picture" width="150px">
+                <img src="./assets/4g1white.png" alt="4G1 profile picture">
             </div>
             <div>
                 <ul class="nav-links">
@@ -29,7 +29,9 @@
             </div>
         </nav>
         <nav id="hamburger-nav">
-            <div class="logo"> Luca Forgione</div>
+            <div class="logo">
+                <img src="./assets/4g1white.png" alt="4G1 profile picture" width="150px">
+            </div>
             <div class="hamburger-menu">
                 <div class="hamburger-icon" onclick="toggleMenu()">
                     <span></span>
@@ -38,20 +40,20 @@
                 </div>
                 <div class="menu-links">
                     <li>
-                        <a href="#about" onclick="toggleMenu()">About</a>
+                        <a href="#web3-consulting" onclick="toggleMenu()">Consulting</a>
                     </li>
                     <li>
-                        <a href="#experience" onclick="toggleMenu()">What I Offer</a>
+                        <a href="#nft-development" onclick="toggleMenu()">NFT Development</a>
                     </li>
                     <li>
-                        <a href="#contact" onclick="toggleMenu()">Contact Me</a>
+                        <a href="#about-me" onclick="toggleMenu()">About Myself</a>
                     </li>
                 </div>
             </div>
         </nav>
         <section id="profile">
             <div class="section__text">
-                <h1 class="title" style="color: white; font-size: 4rem; text-shadow: 2px 0px 10px #f65d00;">
+                <h1 class="title" id="question">
                     WHAT ARE YOU LOOKING FOR?
                 </h1>
                 <ul id="answers-div">
@@ -87,9 +89,8 @@
         <div class="about-containers">
             <div class="details-container" id="consultancy">
                 <h1 style="font-size: 5rem">💰</h1>
-                <h1 class="experience-sub-title orange-cool" style=" margin-top: 1rem; font-size: xxx-large; ">
-                    READY TO UNLOCK THE POWER
-                        OF NFTs
+                <h1 class="experience-sub-title orange-cool">
+                    READY TO UNLOCK THE POWER OF NFTs
                     <br>
                     IN YOUR BUSINESS?
                 </h1>
@@ -98,9 +99,9 @@
                     <b>NFT integration</b>
                     can transform your business by:
                 </h2>
-                <br>
-                <br>
-                <div class="article-container" style=" flex-wrap: wrap; flex-direction: column; align-content: space-around;">
+                <!-- <br>
+                <br> -->
+                <div class="article-container">
                     <article>
                         <img src="./assets/money.png" alt="Money icon" class="icon">
                         <div>
@@ -141,10 +142,11 @@
                         </h1>
                     </a>
                 </div>
+                <br>
             </div>
         </div>
     </section>
-    <section id="nft-development" class="experience" style="margin-top: 10rem">
+    <section id="nft-development" class="experience">
         <h1 class="title" style="font-weight: lighter; color: white;">
             ⟠
             <b> NFT</b>
@@ -153,24 +155,29 @@
         </h1>
         <div class="about-containers">
             <div class="details-container">
-                <!-- <img src="./assets/nft2.png" alt="NFT icon" class="icon" style="height: 4rem" /> -->
                 <h1 style="font-size: 5rem">👾</h1>
-                <h1 class="experience-sub-title orange-cool" style=" margin-top: 1rem; font-size: xxx-large;">
-                    WANT TO LAUNCH YOUR NFT COLLECTION?
+                <h1 class="experience-sub-title orange-cool">
+                    DO YOU WANT TO LAUNCH
+                    <br>
+                    YOUR NFT COLLECTION?
                 </h1>
                 <h2 style="font-weight: lighter">
-                    Starting from an initial meeting, we will discuss the best solution to implement for your
-					project and then I will take care of
-                    <b>all the technical part</b>
+                    Starting from an
+                    
+                    initial meeting
+                    , we will discuss the best solution to implement for your
+					project and then
+                    I will take care of
+                    <b>all the rest</b>
                     .
                 </h2>
                 <br>
                 <br>
-                <h1 class="orange-cool" style="font-size: xx-large;">
+                <h1 class="orange-cool">
                     THE SERVICE
 					COMPREHENDS:
                 </h1>
-                <div class="article-container" style="margin-top: 4rem;">
+                <div class="article-container">
                     <article>
                         <img
                             src="./assets/consultancy.png"
@@ -223,7 +230,7 @@
                 <div class="book-consultancy">
                     <a href="https://forms.gle/xUzCZ2gfgbxqJE4r6" target="_blank">
                         <h1 id="book-2" class="a-fixed">
-                            Click Here &
+                            Click Here to
                             <b id="click-2" class="orange-cool">
                                 Shape Your NFT Idea
                                     !
@@ -235,7 +242,7 @@
             </div>
         </div>
     </section>
-    <section id="about-me" class="experience" style="margin-top: 10rem;">
+    <section id="about-me" class="experience">
         <h1 class="title shadow-reverse" style="color: white;
 		;">
             <b style="color: #f65d00;">Who</b>
@@ -243,111 +250,101 @@
             <b style="color: #f65d00;">Why</b>
             should you choose Myself?
         </h1>
-        <div class="article-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <p style="font-size: 1.2rem ; text-align: justify; font-weight: lighter;">
-                        My name is
-                        <b class="shadow-small" style="color: #f65d00; ">Luke4G1</b>
-                        , and I'm
+        <div class="about-containers">
+            <div class="details-container">
+                <p id="bio">
+                    My name is
+                    <b class="shadow-small" style="color: #f65d00; ">Luke4G1</b>
+                    , and I'm
 						a dedicated
-                        <b>
-                            Blockchain
+                    <b>
+                        Blockchain
 							Engineer
-                        </b>
-                        &
-                        <b>Advisor</b>
-                        with
-						a deep specialization in
-                        <b class="shadow-small" style="color: #f65d00; ">
-                            <i>
-                                NFT
-								technology
-                            </i>
-                        </b>
-                        .
-                        <br>
-                        <br>
-                        Since 2018, I've been at the forefront of
-                        <span style="font-weight: bold; color: #f65d00;">
-                            Smart
+                    </b>
+                    &
+                    <b>Advisor</b>
+                    .
+                    <br>
+                    <br>
+                    Since 2018, I've been at the forefront of
+                    <span style="font-weight: bold; color: #f65d00;">
+                        Smart
 							Contract Development
-                        </span>
-                        , dedicating myself to
+                    </span>
+                    , dedicating myself to
 						mastering the intricacies of
-                        <b>Blockchain Technology</b>
-                        and
-                        <b>NFTs</b>
-                        .
-                        <br>
-                        <br>
-                        My journey in
+                    <b>Blockchain Technology</b>
+                    and
+                    <b>NFTs</b>
+                    .
+                    <br>
+                    <br>
+                    My journey in
 						this
 						rapidly evolving
 						field is marked by a relentless pursuit of
-                        <span style="font-style: italic; ">excellence</span>
-                        and
-                        <span style=" font-style: italic;">innovation</span>
-                        .
-                        <br>
-                        <br>
-                        What sets me apart is my
+                    <span style="font-style: italic; ">excellence</span>
+                    and
+                    <span style=" font-style: italic;">innovation</span>
+                    .
+                    <br>
+                    <br>
+                    What sets me apart is my
 						comprehensive expertise in
-                        <b>NFT technology</b>
-                        - not just the technicalities, but also the
-                        <span style="text-decoration: underline; ">
-                            strategic
+                    <b>NFT technology</b>
+                    - not just the technicalities, but also the
+                    <span style="text-decoration: underline; ">
+                        strategic
 							aspects
-                        </span>
-                        that drive successful implementation and market impact.
-                        <br>
-                        <br>
-                        I pride myself on designing
-                        <b>Custom Blockchain Solutions</b>
-                        , with a
+                    </span>
+                    that drive successful implementation and market impact.
+                    <br>
+                    <br>
+                    I pride myself on designing
+                    <b>Custom Blockchain Solutions</b>
+                    , with a
 						particular flair for
-                        <b class="shadow-small" style="color: #f65d00; ">
-                            NFT
+                    <b class="shadow-small" style="color: #f65d00; ">
+                        NFT
 							Protocols
-                        </b>
-                        .
-                        <br>
-                        <br>
-                        Whether you're a company, a brand, or an individual, my role goes
+                    </b>
+                    .
+                    <br>
+                    <br>
+                    Whether you're a company, a brand, or an individual, my role goes
 						even further than
 						development;
-                        <br>
-                        <br>
-                        As an advisor, I can offer more than just technical guidance.
-                        <br>
-                        <br>
-                        I provide
-                        <b class="shadow-small" style="color: #f65d00; ">consultancies</b>
-                        to
-                        <i>
-                            companies,
+                    <br>
+                    <br>
+                    As an advisor, I can offer more than just technical guidance.
+                    <br>
+                    <br>
+                    I provide
+                    <b class="shadow-small" style="color: #f65d00; ">consultancies</b>
+                    to
+                    <i>
+                        companies,
 							brands, and individuals
-                        </i>
-                        , illuminating the path to integrating
-                        <b>
-                            NFT
+                    </i>
+                    , illuminating the path to integrating
+                    <b>
+                        NFT
 							technology
-                        </b>
-                        effectively into
+                    </b>
+                    effectively into
 						their business strategies.
-                        <br>
-                        <br>
-                        This isn't just about leveraging technology: it's about
-                        <b style=" text-decoration: underline; color: black; text-shadow: 0.1px 0.1px 1px #f65d00; ">
-                            unlocking
+                    <br>
+                    <br>
+                    This isn't just about leveraging technology: it's about
+                    <b style=" text-decoration: underline; color: black; text-shadow: 0.1px 0.1px 1px #f65d00; ">
+                        unlocking
 							new
 							opportunities and value in your digital endeavors.
-                        </b>
-                        <br>
-                        <br>
-                        You can find all my references down below.
-                    </p>
-                </div>
+                    </b>
+                    <br>
+                    <br>
+                    You can find all my references down below.
+                </p>
             </div>
             <div class="contact-info-upper-container">
                 <div class="contact-info-container">
