@@ -25,13 +25,20 @@ document.querySelector("#book-2").addEventListener("mouseout", () => {
 	document.querySelector("#click-2").style.color = "#f65d00";
 });
 
-$(function () {
-	$("a[href*=#]").on("click", function (e) {
-		e.preventDefault();
-		$("html, body").animate(
-			{ scrollTop: $($(this).attr("href")).offset().top },
-			500,
-			"linear"
-		);
+document.addEventListener("DOMContentLoaded", function () {
+	var anchorLinks = document.querySelectorAll('a[href*="#"]');
+
+	anchorLinks.forEach(function (link) {
+		link.addEventListener("click", function (e) {
+			e.preventDefault();
+
+			var target = document.querySelector(this.getAttribute("href"));
+			var topOffset = target.getBoundingClientRect().top + window.pageYOffset;
+
+			window.scroll({
+				top: topOffset,
+				behavior: "smooth",
+			});
+		});
 	});
 });
