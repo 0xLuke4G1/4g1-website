@@ -374,12 +374,11 @@ section h1 {
 .experience-details-container {
 	display: flex;
 	justify-content: center;
-
 	flex-direction: column;
 }
 
 .article-container {
-	margin-top: 4rem;
+	margin-top: 3rem;
 	display: flex;
 	text-align: initial;
 	flex-wrap: wrap;
@@ -387,12 +386,6 @@ section h1 {
 	justify-content: space-around;
 	flex-direction: column;
 	align-content: space-around;
-}
-
-.article-refactored {
-	width: 100%;
-	margin-bottom: 1rem;
-	width: 100%;
 }
 
 article {
